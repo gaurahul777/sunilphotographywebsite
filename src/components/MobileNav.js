@@ -1,17 +1,17 @@
-import React,{useState} from 'react';
+import React, { useState } from "react";
 //import icons
-import {IoMdClose} from 'react-icons/io'
-import { CgMenuRight } from 'react-icons/cg'
+import { IoMdClose } from "react-icons/io";
+import { CgMenuRight } from "react-icons/cg";
 //import Link
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 //import motion
-import { motion } from 'framer-motion';
-import { ImFacebook, ImInstagram, ImYoutube } from 'react-icons/im';
+import { motion } from "framer-motion";
+import { ImFacebook, ImInstagram, ImYoutube } from "react-icons/im";
 
 //menu variants
 const menuVariants = {
   hidden: {
-    x: '100%'
+    x: "100%",
   },
   show: {
     x: 0,
@@ -69,7 +69,7 @@ const MobileNav = () => {
             </Link>
           </li>
         </ul>
-        <div className=" h-[90px]">
+        <div className=" h-[250px] ">
           <ul className="flex gap-x-5 justify-center">
             <li>
               <a
@@ -95,7 +95,13 @@ const MobileNav = () => {
           </ul>
           <p className="text-center pt-2 font-light">All Rights Reserved </p>
           <p className="text-center font-bold">
-            Developer <a href='https://www.instagram.com/rahul.jsx/' className='underline hover:text-blue-600'>Rahul</a>{" "}
+            Developer{" "}
+            <a
+              href="https://www.instagram.com/rahul.jsx/"
+              className="underline hover:text-blue-600"
+            >
+              Rahul
+            </a>{" "}
           </p>
         </div>
       </motion.div>
