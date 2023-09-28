@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-hidden text-primary font-secondary bg-white;
+  }
+  .h1 {
+    @apply text-[40px] md:text-[75px] font-primary font-bold capitalize leading-[110%] tracking-[-0.04em] mb-1;
+  }
+  .section {
+    @apply h-screen w-screen;
+  }
+  .btn {
+    @apply py-[12px] px-[45px] h-[50px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white hover:text-slate-900 hover:bg-slate-400 shadow-2xl;
+  }
+  
+}
+
+@layer utilities{
+  .square{
+    aspect-ratio:1/1
+  }
+  .square2{
+    aspect-ratio:2/1
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
